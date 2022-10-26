@@ -1,0 +1,35 @@
+#직넓
+# def solution(dots):
+#     answer = 0
+#     d1 = dots[0]
+#     d2 = [0,0]
+#     for x, y in dots:
+#         if d1[0] != x and d1[1] != y:
+#             d2[0] = x
+#             d2[1] = y
+#     garo = d1[0] - d2[0]
+#     sero = d1[1] - d2[1]
+#     if garo < 0:
+#         garo *= -1
+#     if sero < 0:
+#         sero *= -1
+#     return garo * sero
+# d = [[-1, -1], [1, 1], [1, -1], [-1, 1]]
+# print(solution(d))
+#겹선길
+# def solution(lines):
+#     answer = 0
+#     nums = {}
+#     for line in lines:
+#         for i in range(line[0],line[1]):
+#             if i not in nums:
+#                 nums[i] = 1
+#             else:
+#                 nums[i] += 1
+#     for j in nums.values():
+#         if j > 1:
+#             answer += 1
+#     return answer
+# 
+# l = [[0, 1], [2, 5], [3, 9]]
+# print(solution(l))
